@@ -1,0 +1,577 @@
+{% extends 'base.html' %}
+
+{% block title %}
+TZ Construction
+{% endblock %}
+
+{% block content %}
+
+<!-- Navbar -->
+<nav class="bg-white text-red-600 sticky top-0 z-50 shadow-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- Brand / Logo -->
+        <div class="flex items-center space-x-2 font-black tracking-wider text-lg uppercase">
+
+            <img 
+                src="{{ url_for('static', filename='img/logo.png') }}" 
+                alt="TZ Logo"
+                class="w-10 h-10 sm:w-20 sm:h-20 object-contain"
+            >
+
+
+            <img 
+                src="{{ url_for('static', filename='img/tz-text.png') }}" 
+                alt="TZ Logo"
+                class="w-20 h-10 sm:w-40 sm:h-20 object-contain"
+            >
+
+
+        
+            
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-6 text-xs font-bold uppercase tracking-wider text-red-500">
+            <a href="#home" class="hover:text-red-700 transition-colors">ပင်မစာမျက်နှာ</a>
+            <a href="#services" class="hover:text-red-700 transition-colors">ဝန်ဆောင်မှုများ</a>
+            <a href="#projects" class="hover:text-red-700 transition-colors">စီမံကိန်းများ</a>
+            <a href="#contact" class="hover:text-red-700 transition-colors">ဆက်သွယ်ရန်</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- Hero -->
+<section
+    id="home"
+    class="bg-slate-900 text-white min-h-[65vh] flex items-center bg-cover bg-center relative"
+    style="background-image: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.9)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80');"
+>
+    <div class="max-w-6xl mx-auto px-6 w-full py-16">
+
+        <span class="text-amber-500 font-bold tracking-widest uppercase text-xs border-l-2 border-amber-500 pl-2">
+            စံချိန်စံညွှန်းမီ လုပ်ငန်းခွင်
+        </span>
+
+        <h1 class="text-2xl md:text-4xl font-bold tracking-tight mt-3 max-w-3xl leading-snug text-slate-100">
+            အင်ဂျင်နီယာအတတ်ပညာ တိကျမှန်ကန်မှုနှင့် ခေတ်မီ ဆန်းသစ်သော လက်ရာများ
+        </h1>
+
+        <div class="mt-6">
+            <a href="#profile"
+               class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-6 py-3 text-xs uppercase tracking-wider inline-block shadow-lg transition-colors">
+                Business Profile
+            </a>
+        
+
+        
+            <a href="#projects"
+               class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-6 py-3 text-xs uppercase tracking-wider inline-block shadow-lg transition-colors">
+                Projects Gallery
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Profile Section -->
+<section id="profile" class="py-20 bg-slate-50 border-y border-slate-200 overflow-hidden">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+        <!-- Text Content -->
+        <div class="min-w-0">
+
+            <h2 class="text-xl font-bold uppercase border-b-2 border-amber-500 pb-2 w-fit mb-6">
+                
+            </h2>
+
+            <h3 class="text-2xl font-bold text-slate-800 mb-4 break-words">
+                Our Business Profile
+            </h3>
+
+            <p class="text-slate-600 text-sm leading-8 tracking-wide text-justify break-words mb-4">
+               ကျွန်ုပ်တို့ TZ Construction သည် အရည်အသွေးမြင့် ဆောက်လုပ်ရေးလုပ်ငန်းများကို ယုံကြည်စိတ်ချစွာ တည်ဆောက်ပေးနေသော
+               မန္တလေးမြို့အခြေစိုက် အင်ဂျင်နီယာဝန်ဆောင်မှုလုပ်ငန်းဖြစ်သည်။
+            </p>
+
+            <p class="text-slate-600 text-sm leading-8 tracking-wide text-justify break-words mb-4">
+                အကြီးတန်းလိုင်စင်ရ အင်ဂျင်နီယာ ဦးသိန်းဇော်ဦးစီးသော TZ Construction သည်မန္တလေးမြို့၏ သက်တမ်းရင့် ဆောက်လုပ်ရေးလုပ်ငန်းတစ်ခုဖြစ်ပြီး လိုင်စင်အမှတ်မှာ အကြီးတန်း(၀၄၄)/RSE-0475 ဖြစ်သည်။
+            </p>
+
+            <p class="text-slate-600 text-sm leading-8 tracking-wide text-justify break-words mb-6">
+                ၁၉၉၂ ခုနှစ်မှစတင်၍ ယခုလက်ရှိ ၂၀၂၆ခုနှစ်ထိ နှစ်ပေါင်း (၃၄) နှစ်တာကာလအတွင်း
+                လူနေအိမ်၊ စက်မှု၊ စီးပွားရေးနှင့် သာသနိကအပါအဝင် အဆောက်အဦး စီမံကိန်း(၁၀၀၀)ကျော်ကို
+                စနစ်တကျနှင့် အရည်အသွေးမြင့်စွာ တည်ဆောက်ခဲ့သည်။
+            </p>
+
+           <p class="text-slate-600 text-sm leading-8 tracking-wide text-justify break-words mb-6">
+                TZ construction တွင် ပညာရှင်လုပ်သားဦးရေ အင်ဂျင်နီယာ ၄၀ ဝန်းကျင်ခန့် နှင့် အခြေခံလုပ်သားဦးရေ ၅၀၀ကျော်ကို စဥ်ဆက်မပြတ် အလုပ်အကိုင်များ ဖန်တီးပေးထားပြီး မိဘပြည်သူများမှ ယုံကြည်စွာ အပ်နှံသော အဆောက်အဦး စီမံကိန်းများကို တိကျမှန်ကန်စွာ ဝန်ဆောင်မှုပေးလျက်ရှိပါသည်။
+            </p>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+
+                <div class="bg-white px-4 py-3 border shadow-sm text-center">
+                    <p class="text-amber-500 font-bold text-lg">RSE</p>
+                    <p class="text-xs text-slate-600">လိုင်စင်ရ</p>
+                </div>
+
+                <div class="bg-white px-4 py-3 border shadow-sm text-center">
+                    <p class="text-amber-500 font-bold text-lg">34+</p>
+                    <p class="text-xs text-slate-600">နှစ်အတွေ့အကြုံ</p>
+                </div>
+
+                <div class="bg-white px-4 py-3 border shadow-sm text-center">
+                    <p class="text-amber-500 font-bold text-lg">1000+</p>
+                    <p class="text-xs text-slate-600">စီမံကိန်း</p>
+                </div>
+
+                <div class="bg-white px-4 py-3 border shadow-sm text-center">
+                    <p class="text-amber-500 font-bold text-lg">40±</p>
+                    <p class="text-xs text-slate-600">ပညာရှင်လုပ်သား</p>
+                </div>
+
+                <div class="bg-white px-4 py-3 border shadow-sm text-center">
+                    <p class="text-amber-500 font-bold text-lg">500+</p>
+                    <p class="text-xs text-slate-600">အခြေခံလုပ်သား</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Visual / Image Slideshow -->
+        <div class="relative h-64 sm:h-80 md:h-[420px] overflow-hidden border bg-slate-100 rounded-sm">
+
+            <!-- Slides -->
+
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                <img src="https://acropolis-wp-content-uploads.s3.us-west-1.amazonaws.com/phases-of-construction.webp"
+                     class="w-full h-full object-cover" />
+            </div>
+
+            <div class="slide absolute inset-0 opacity-100 transition-opacity duration-700">
+                <img src="https://cpe.ucdavis.edu/sites/g/files/dgvnsk15476/files/styles/sf_hero_banner_large/public/media/images/const-hero.jpg?h=bf654dbc&itok=1iECOUHR"
+                     class="w-full h-full object-cover" />
+            </div>
+
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                <img src="https://t4.ftcdn.net/jpg/00/68/63/23/240_F_68632352_kmHLwFc2rQLmnKqn6gM0bhOPqxRTx8sY.jpg"
+                     class="w-full h-full object-cover" />
+            </div>
+
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                     class="w-full h-full object-cover" />
+            </div>
+
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                <img src="https://thearchitectsdiary.com/wp-content/uploads/2025/03/bank-design-1-1024x682.jpg"
+                     class="w-full h-full object-cover" />
+            </div>
+
+            <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+                <img src="https://itasmdy.com/wp-content/uploads/2024/07/elv-solutions-2.png"
+                     class="w-full h-full object-cover" />
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Services -->
+<!-- Services -->
+<section id="services" class="py-20 bg-slate-50">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <h2 class="text-2xl font-bold text-slate-900">
+         ရရှိနိုင်သော ဝန်ဆောင်မှုများ
+        </h2>
+
+        <div class="w-50 h-1 bg-amber-500 mt-3 rounded"></div>
+
+        <!-- Horizontal Scroll -->
+        <div class="mt-12 flex gap-6 overflow-x-auto pb-4 scroll-smooth">
+<!-- NEW -->
+            <div onclick="openModal('📐','ဒီဇိုင်းနှင့် အကြံပေး','အဆောက်အဦး ဒီဇိုင်းရေးဆွဲခြင်းနှင့် အကြံပေးဝန်ဆောင်မှု။')"
+                class="min-w-[280px] bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition cursor-pointer">
+
+                <div class="text-5xl mb-5">📐</div>
+                <h3 class="text-xl font-bold mb-3">ဒီဇိုင်းနှင့် အကြံပေး</h3>
+                <p class="text-slate-500 text-sm">Design & Consulting Services.</p>
+            </div>
+            <!-- Card -->
+            <div onclick="openModal('🏢','အထပ်မြင့် အဆောက်အဦးများ','စီးပွားရေးအဆောက်အဦးများ တည်ဆောက်ခြင်း။')"
+                class="min-w-[280px] bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition cursor-pointer">
+
+                <div class="text-5xl mb-5">🏢</div>
+                <h3 class="text-xl font-bold mb-3">အထပ်မြင့် အဆောက်အဦးများ</h3>
+                <p class="text-slate-500 text-sm">စီးပွားရေးအဆောက်အဦးများ တည်ဆောက်ခြင်း။</p>
+            </div>
+
+            <!-- Card -->
+            <div onclick="openModal('🏭','စက်ရုံ အလုပ်ရုံများ','Industrial နှင့် Factory များ တည်ဆောက်ခြင်း။')"
+                class="min-w-[280px] bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition cursor-pointer">
+
+                <div class="text-5xl mb-5">🏭</div>
+                <h3 class="text-xl font-bold mb-3">စက်ရုံ အလုပ်ရုံများ</h3>
+                <p class="text-slate-500 text-sm">Industrial နှင့် Factory များ တည်ဆောက်ခြင်း။</p>
+            </div>
+
+            <!-- Card -->
+            <div onclick="openModal('🏠','အိမ်ရာစီမံကိန်းများ','Residential Project များ တည်ဆောက်ခြင်း။')"
+                class="min-w-[280px] bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition cursor-pointer">
+
+                <div class="text-5xl mb-5">🏠</div>
+                <h3 class="text-xl font-bold mb-3">အိမ်ရာစီမံကိန်းများ</h3>
+                <p class="text-slate-500 text-sm">Residential Project များ တည်ဆောက်ခြင်း။</p>
+            </div>
+
+            <!-- NEW -->
+            <div onclick="openModal('🛕','သာသနိက အဆောက်အဦးများ','ဘုရားကျောင်းများနှင့် သာသနာဆိုင်ရာ အဆောက်အဦးများ တည်ဆောက်ခြင်း။')"
+                class="min-w-[280px] bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition cursor-pointer">
+
+                <div class="text-5xl mb-5">🛕</div>
+                <h3 class="text-xl font-bold mb-3">သာသနိက အဆောက်အဦးများ</h3>
+                <p class="text-slate-500 text-sm">ဘုရားကျောင်းများ တည်ဆောက်ခြင်း။</p>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="bg-slate-900 text-white py-20">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="flex justify-between items-end border-b border-slate-800 pb-4 mb-8">
+
+            <h2 class="text-xl font-bold tracking-tight">
+                အထင်ကရ စီမံကိန်းများ
+            </h2>
+
+        </div>
+
+        <!-- Grid -->
+        <div id="projectGrid" class="grid md:grid-cols-3 gap-6">
+
+            <!-- 1 -->
+
+            <div class="project-card bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwnk4Yeebm7NcKasp6OsAw1ulC5LrTvI4TqaTD5J4MZL4w6Di66CQxtbyGkikeIhP7ebPWSOk9iaaKdqqvqb7RysSa_7Zm2d6G5SwXejtb2KjizXqulC0YPSuHoqBVC5bxFi_P6wNsmXZGhVP45qfZ2WyXs12XbSOfM9vrcMHuZw2D0eqtxGC3X804wMc/s320/high.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">အထပ်မြင့်</span>
+                    <h3 class="text-sm font-bold mt-1">High Building</h3>
+                </div>
+            </div>
+
+            
+
+            <div class="project-card bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQsud8LPrVrabR_Nh0_bicx-XmOlLxGE5XSbLvPT9Xh-LJChNuedVeQPZf1wWqgLN7cpzQM3MS-oRXeqeac6kX6a8zE7TcMnT6BtQemro9zQBg8sBk7UVGK05wxfgIOowcW4yf2oho_q5Yr3TzGzYaUK_TJF3LQ2SESeriWGaOHn5_eXARH9_Sj0F7buE/s320/design1.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">Beautiful Buildings</span>
+                    <h3 class="text-sm font-bold mt-1">Designs and Construction</h3>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="project-card bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8289hhCkaxwMOxfspabXto8xb09qhTPWdoAiW9blQPcd9vI51FAF_0GlStUO5QWxGRw6lrgMTjrhBsW61dEkT_tY1pS3k_a8G2Gi4Va6SGeH44EDT-wct9HtAZ83mRpjpPXT3St1Vl2sCSePm2t7g8OnvfX-BPuCjfSyNnw6by7SXI62pXXO-MReIuyg/s320/design6.jpg"
+                    class='w-full h-auto group-hover:scale-105 transition'>
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">Beautiful Buildings</span>
+                    <h3 class="text-sm font-bold mt-1">Designs & Construction</h3>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            
+
+            <!-- Hidden extra cards (4–10) -->
+            
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOssUqwJAFPO8UQ9zkENXHDa94g8qEXUSjlEJcNm1wUrj4X2k61tjBQ8qdhVX3jmw28BO6aWwYSxKg_MJZrafDP5_mV13rAGH62RJ_UIF6YMZ4OuWlE2hffiZdXdHIYRoU4m5aMo8qVzpujIskEgsw_ItTAJDrGK-JMrBNpz6L88vEDbO3xXc9KoSlV6g/s1600/design5.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">Design 1</span>
+                    <h3 class="text-sm font-bold mt-1">Design & Construction</h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2iD5v9Yi42t5q5wlmvaLiKH-c-ERDCS1Gz8YZcQJAenAhlASSY8eZdsXAHan81Ah-yY1_yxnI7qB9uZyTCXgx07yHkohA0SFJLl6K72Pvt-I8fML9qcXdqbTKTUWjvhg4Bz0xNZDPHnYZ8xofHb1BqavbJztDH0Ph1dG7zTwkD6CsufPMw5-mdZB9eg4/s1280/design2.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">Design 2</span>
+                    <h3 class="text-sm font-bold mt-1">Design & Construction</h3>
+                </div>
+            </div>
+
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="{{ url_for('static', filename='img/industrials.jpg') }}"
+                    class="w-full h-50 group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">စက်မှု</span>
+                    <h3 class="text-sm font-bold mt-1">Industrial Hub</h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="{{ url_for('static', filename='img/school.jpg') }}"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">စာသင်ကျောင်းများ</span>
+                    <h3 class="text-sm font-bold mt-1">Partnership with UNICEF and World Vision</h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="{{ url_for('static', filename='img/collection.jpg') }}"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">လူနေအိမ်ရာများနှင့် ဟိုတယ်များ</span>
+                    <h3 class="text-sm font-bold mt-1">Residentials and Hotels</h3>
+                </div>
+            </div>
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="{{ url_for('static', filename='img/pagoda.jpg') }}"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">သာသနိက</span>
+                    <h3 class="text-sm font-bold mt-1">Library Building in Masoeyein Monestry</h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="{{ url_for('static', filename='img/temple.jpg') }}"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">သာသနိက</span>
+                    <h3 class="text-sm font-bold mt-1">Jin Taw Yan Buddhist Temple (So called Yunnanese Temple) in Mandalay</h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_E-nOGXhpPDrHSZtZ9-Shsk2FeYfub2b3X6dK1rlSlHQc_AtqOOQHxUgtHvOiaNLkm-54S4qy2r0GRdcHBYtsx7LAqyfFn7kAPcXZ5ncgWCqPpXPh0BOnuM2IKnWRL2PC-ETzYF0c9Gy0cx8HIu_Eml3xNdvyUimyuOj1Hrjwf5eyFdoC_hg4pFqkv7nJ/s1280/photo_2026-05-24_13-38-49.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (1) </span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIYO1ffiMOEJ-FM8iuH5A8I68TYU_-6_ptz0K9t2ecxo2hwhjUa0QKDEYUZzyzonoAGCYLnEGrIbjYXPwHpinRDn8LNRroEWEEasKWMdUM2mFgC-LfFtzDTdi0mpuafJVBux622s7dGFCsu2KV85-cH5OvkAC4GqnFlRCOYncNm4zq3Q1Go-l555GP0DIl/s1280/photo_2026-05-24_13-38-42.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (2) </span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsmuW2cd61E9-jJIUhLXEp14cV1dzFXE8syWBPkcOeiEjswIjlUw4Ko4AOAuPRtZAC8cU1FAsIvAKlzLjNhmpJHxo99yqZ5Gm6INYF594LWPyIWy09kTeu_eC65Mhs1N4LNlUwEm5ue-K9j5ihXXrlBwrMb39HxWXQfYUQMT9jrIKhezWZiblHeT7qfD_u/s1280/photo_2026-05-24_13-38-44.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (3)</span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCKPPt-tV2BuiHBAH_j3s5oV_WoJlGIjOfcUrEBAC8QB7BTOy8lZDgquyoS-DE6_GqWcdSZ80WmI4rBRBNzKjkxsiybD1wprT4YH0-NcOhk-6VcfiddPAosIiobCoxMLSje5MSTcmU9YOaJAHp0gYLek6CRxJuB2kYmNnG0JT1MuELx68BGpROdYkcMjS5/s320/photo_2026-05-24_13-38-47.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (4)</span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXv9DK6M15UJ0HOkdhT_c8Kp5mor8B4y5VPidKUbtgDfRrZ0oxOOQ9dRC3mSy_8ZkGrkYmCetdAVO_alnOyD7JePFko73E8NBr4JZlJlfuuo1KgBP891uPCSBJqfl2yLTAwtWPD5o-ncUcnaWXST3KIc2ka5EcVzVaNnrm6nmJQjXG2Sh9Azc-VEplOqlw/s320/photo_2026-05-24_13-38-46.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (5)</span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYC20obBVuVxZMfrNuswcMM8Ls3ijyM5ydjoBstUchfKji8O4okWY-v4Y_AcCRLTO_HuI8AjHlW6Bi84NMBK_pfm0yV84c8QaerphpcNTicUwCiWbz2csGUUdgOGpqbRV-NDfsIf4IylGeHjBTEuk_74nU4evnWsLZUs1nS4lDDn_4N3r6qUNAC27jlrlV/s320/photo_2026-05-24_13-38-35.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (6)</span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdHTjnYrrAF_H8n5d2Znq_6HEtyo6yCXOA7OBHyajj38yM3_jE5p-piQarQHtNjYz1c0IL2v3yS7Q7NMIXqCiW9ok41Go1cB_XI0zT1BxwwcBaU2HYvApu-6rFS_yr8Ry_FXfbbP4V0qAoMxbX4SuagqcLHaGBbiZu1QDvK_yPqIvERFc1ATQU2yQt0GKK/s320/photo_2026-05-24_13-38-37.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (7)</span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFWh0atHyVyka3iZmCixnz2VEHdRDtfDOZE5xOTnJ-7VlS3xhQSrVMbqNGhVQel6-OegUaF-Er78JdmnLS9xYPznHX1KXRY2abfQP30oXbUaRHdj_LE5yGR0Hfrn6xog6QGUCWBmdX7YadbkyaBzpv2azBCNVEV-NnQRn51OCx6Znk-IMnOTeIRbQSXkkl/s320/photo_2026-05-24_13-38-38.jpg'
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၂ ခုနှစ်မှ ၂၀၁၅ ခုနှစ်အတွင်း အဆောက်အဦးစီမံကိန်းများ (8)</span>
+                    <h3 class="text-sm font-bold mt-1">Projects since 1992 to 2015  </h3>
+                </div>
+            </div>
+
+
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW5icK4XEvajDPlcL69m_Hdg_4NBJandhOCQp-fFa2mqQ6nXfLGFS3ikPY78-997cbrHP9hHhksrtvWhKBe04mkoHJQHwl4T_Vzj4PtAazcmGqVvpj-nZUCrEOsywgvhPjB8YIMGOGOKrhmGZnc9LPRQvKXe68bXenbY71_zR0Vxm_7UUT_rbzqhaifN01/s1280/photo_2026-05-24_13-38-51.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၂၀၀၀ ပြည့်နှစ်မှ စီမံကိန်းများ</span>
+                    <h3 class="text-sm font-bold mt-1">Abstract projects since 2000  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicQUhfiNp8RoJwnoqdtfPLRwaj7m_TLfnWPUF8Q4w7gbWzk73GrGTGqN9O4wXbYYsaK7orkiB2zRko9i-heVVPdJNU3X7rxm109F0G0exyvHhOE0eY8nfndOAM_VXh4G2QfH1ZrPQilHb2__IDNs2bON1yeTG5nVFaIqbKYpY4QgWvtzvQ3_cZeJa1_QKz/s1280/photo_2026-05-24_13-38-53.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၉ခုနှစ်မှ စီမံကိန်းများ</span>
+                    <h3 class="text-sm font-bold mt-1">Abstract projects since 1999  </h3>
+                </div>
+            </div>
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHUrRiLmmqIphxlPKSGozBwMBueTqjcG7QPIm0drZs0OZa-qC5sHdWdv5yN2BKn7J5HhhbJ-ID8XiXQ7e_5Lgyuma4lAkd5WuT-i7KOSp6WeHHDZm7UgaGl9FPQzBmSTCICqxlBOGunKskPWoQVecCH8B0sMeFCaNV7RC8k66oClz7LZ8I3P2l29npVKHJ/s1280/photo_2026-05-24_13-38-55.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၈ခုနှစ်မှ စီမံကိန်းများ</span>
+                    <h3 class="text-sm font-bold mt-1">Abstract projects since 1998  </h3>
+                </div>
+            </div>
+            <!-- Add more up to 10 similarly -->
+
+            <div class="project-extra hidden bg-slate-800 border border-slate-700 overflow-hidden group">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvKtyDsq3d36m6JqHuHf9N_7jtkVWqovj-oqFJc9jRPY44goiJHY7xBhO_ELBJ8Kt3Za-rJwaw6eXK9O9c-luYfbZs-pkdDJNzdUpek01LWALCSrNvLMa2ZY0i8sov72jRIZwrfmgcQervl9ET73OBHt-3ZeXqp6iemPmu46zj8lMQK7N_oHSMuMqjUq-9/s1280/photo_2026-05-24_13-38-57.jpg"
+                    class="w-full h-auto group-hover:scale-105 transition">
+                <div class="p-4">
+                    <span class="text-amber-500 text-[10px] font-bold uppercase">၁၉၉၇ခုနှစ်မှ စီမံကိန်းများ</span>
+                    <h3 class="text-sm font-bold mt-1">Abstract projects since 1997  </h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue Button -->
+        <div class="text-center mt-10">
+
+            <button onclick="showAllProjects()"
+                class="px-6 py-3 bg-amber-500 text-black font-semibold rounded-full hover:bg-amber-400 transition">
+
+                ဆက်လက်ကြည့်ရှုရန်
+
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Script -->
+<script>
+    function showAllProjects() {
+
+        document.querySelectorAll('.project-extra').forEach(el => {
+            el.classList.remove('hidden');
+        });
+
+        // hide button after expand
+        event.target.style.display = "none";
+    }
+</script>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-slate-50">
+
+    <div class="max-w-4xl mx-auto px-6">
+
+        <div class="bg-white border-t-2 border-amber-500 p-10 shadow-md rounded-2xl">
+
+            <h3 class="text-xl font-bold mb-8 text-slate-900">
+                ဆက်သွယ်ရန် အချက်အလက်များ
+            </h3>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Address -->
+                <div class="space-y-2">
+                    <div class="text-3xl">📍</div>
+                    <h4 class="font-bold text-slate-800">လိပ်စာ</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        No.(344), Sein Ban Minthar Quarter,<br>
+                        Mahasi Road,<br>
+                        Mandalay, Myanmar
+                    </p>
+                </div>
+
+                <!-- Phone -->
+                <div class="space-y-2">
+                    <div class="text-3xl">📞</div>
+                    <h4 class="font-bold text-slate-800">ဖုန်း</h4>
+                    <p class="text-sm text-slate-600">
+                        02-4034560<br>
+                        02-4063663<br>
+                        09-2001600<br>
+                    </p>
+                </div>
+
+                <!-- Email -->
+                <div class="space-y-2">
+                    <div class="text-3xl">✉️</div>
+                    <h4 class="font-bold text-slate-800">အီးမေးလ်</h4>
+                    <p class="text-sm text-slate-600">
+                        utheinzaw.mdy.mm@gmail.com<br>
+                        tz-group@mandalay.net.mm
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="mt-10 pt-6 border-t border-slate-200 text-center">
+
+                <p class="text-sm text-slate-500">
+                    ဆောက်လုပ်ရေးလုပ်ငန်းများအတွက် အချိန်မရွေး ဆက်သွယ်နိုင်ပါသည်
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-slate-950 text-slate-600 py-6 text-center text-[10px] border-t border-slate-900">
+    <p>&copy; 2026 TZ Construction. Dveloper @U La Win Tun, +959778352457</p>
+</footer>
+
+{% endblock %}
